@@ -7,4 +7,3 @@ captures/
 .externalNativeBuild/
 .cxx/
 google-services.json
-local.properties
