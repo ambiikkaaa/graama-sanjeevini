@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginVertical="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="@color/surface">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/invMedicineName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paracetamol"
+                android:textColor="@color/text_primary"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/invExpiryDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Expires: 2025-12-01"
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/invStockCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stock: 10"
+                android:textColor="@color/primary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/invDiscountBadge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@color/warning"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="4dp"
+                android:text="20% OFF"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/invLifeSavingStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@color/error"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="4dp"
+                android:text="LIFE-SAVING"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

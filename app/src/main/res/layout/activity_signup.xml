@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary">
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="Create Account"
+            app:titleTextColor="@color/white" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="6dp"
+                app:cardBackgroundColor="@color/surface">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="24dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Full Name"
+                        app:hintTextColor="@color/primary"
+                        app:startIconDrawable="@android:drawable/ic_menu_edit"
+                        app:startIconTint="@color/primary">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/nameEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_primary"
+                            android:inputType="textPersonName" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:hint="Contact Number"
+                        app:hintTextColor="@color/primary"
+                        app:startIconDrawable="@android:drawable/ic_menu_call"
+                        app:startIconTint="@color/primary">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/phoneEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_primary"
+                            android:inputType="phone" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:hint="Email Address"
+                        app:hintTextColor="@color/primary"
+                        app:startIconDrawable="@android:drawable/ic_dialog_email"
+                        app:startIconTint="@color/primary">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/emailEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_primary"
+                            android:inputType="textEmailAddress" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:hint="Medical Store Name"
+                        app:hintTextColor="@color/primary"
+                        app:startIconDrawable="@android:drawable/ic_input_add"
+                        app:startIconTint="@color/primary">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/storeNameEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_primary"
+                            android:inputType="textCapWords" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:hint="Store Location (Village/Area)"
+                        app:hintTextColor="@color/primary"
+                        app:startIconDrawable="@android:drawable/ic_dialog_map"
+                        app:startIconTint="@color/primary">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/locationEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_primary"
+                            android:inputType="textCapWords" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <!-- Button to open map for precise location -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/pickLocationButton"
+                        style="@style/Widget.Material3.Button.TonalButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="PICK STORE LOCATION ON MAP"
+                        app:icon="@android:drawable/ic_menu_mylocation" />
+
+                    <TextView
+                        android:id="@+id/locationStatusText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Location: Not Selected"
+                        android:textColor="@color/error"
+                        android:textSize="12sp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:hint="Set Password"
+                        app:hintTextColor="@color/primary"
+                        app:passwordToggleEnabled="true"
+                        app:startIconDrawable="@android:drawable/ic_lock_idle_lock"
+                        app:startIconTint="@color/primary">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/passwordEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_primary"
+                            android:inputType="textPassword" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/signupButton"
+                        style="@style/LargeButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        android:layout_marginTop="32dp"
+                        android:text="REGISTER"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/backToLoginButton"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Already have an account? Login here"
+                android:textColor="@color/primary"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

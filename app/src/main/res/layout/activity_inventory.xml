@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="Stock Management"
+            app:titleTextColor="@color/white"
+            app:menu="@menu/inventory_menu" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Add/Update Form -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="6dp"
+                app:cardBackgroundColor="@color/surface">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Update Inventory"
+                        android:textColor="@color/primary"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="20dp"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Medicine Name"
+                        app:hintTextColor="@color/primary">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/medicineNameEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_primary"
+                            android:inputType="textCapWords" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="8dp"
+                            android:hint="Quantity"
+                            app:hintTextColor="@color/primary">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/stockEditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/text_primary"
+                                android:inputType="number" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginStart="8dp"
+                            android:hint="Expiry Date"
+                            app:hintTextColor="@color/primary"
+                            app:startIconDrawable="@android:drawable/ic_menu_my_calendar">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/expiryEditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/text_primary"
+                                android:focusable="false"
+                                android:clickable="true"
+                                android:inputType="none" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:hint="Discount (%)"
+                        app:hintTextColor="@color/primary">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/discountEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_primary"
+                            android:inputType="number" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/lifeSavingCheckBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="Mark as Life-Saving Medicine"
+                        android:textColor="@color/error"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/addButton"
+                        style="@style/LargeButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        android:layout_marginTop="24dp"
+                        android:text="UPDATE STOCK" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Feature 1: Near Expiry Section -->
+            <TextView
+                android:id="@+id/nearExpiryTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="12dp"
+                android:text="⚠ Near Expiry Medicines"
+                android:textColor="@color/warning"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/nearExpiryRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="12dp"
+                android:text="Your Full Inventory"
+                android:textColor="@color/text_primary"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/inventoryRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

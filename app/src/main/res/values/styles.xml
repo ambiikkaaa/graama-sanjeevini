@@ -1,0 +1,49 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.GramaSanjeevini" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/on_primary</item>
+        <item name="colorPrimaryContainer">@color/primary_light</item>
+        <item name="colorOnPrimaryContainer">@color/primary_dark</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorOnSecondary">@color/on_secondary</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/primary</item>
+        <item name="android:windowBackground">@color/background</item>
+
+        <!-- Text appearances for high visibility -->
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+    </style>
+
+    <style name="LargeButton" parent="Widget.Material3.Button">
+        <item name="android:layout_height">64dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:insetTop">4dp</item>
+        <item name="android:insetBottom">4dp</item>
+        <item name="cornerRadius">12dp</item>
+    </style>
+
+    <style name="SearchCard" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardElevation">6dp</item>
+        <item name="cardCornerRadius">20dp</item>
+        <item name="android:layout_margin">12dp</item>
+        <item name="cardBackgroundColor">@color/surface</item>
+    </style>
+
+    <style name="HeadlineText">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="BodyText">
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>

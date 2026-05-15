@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grama Sanjeevini"
+        android:textColor="@color/primary"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/appSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Village Medical Assistant"
+        android:textColor="@color/text_secondary"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/appTitle"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/searchCard"
+        style="@style/SearchCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/appSubtitle"
+        android:layout_marginTop="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <EditText
+                android:id="@+id/searchEditText"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/edit_text_rounded"
+                android:hint="Search Medicine Name..."
+                android:paddingStart="16dp"
+                android:textSize="18sp"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_hint"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/searchButton"
+                style="@style/LargeButton"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:text="FIND MEDICINE"
+                android:layout_marginTop="16dp"
+                app:icon="@android:drawable/ic_menu_search" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/filterChipGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:singleSelection="true"
+        app:selectionRequired="true"
+        app:layout_constraintTop_toBottomOf="@id/searchCard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipAll"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ALL"
+            android:checked="true" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip10km"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10 KM" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip20km"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20 KM" />
+    </com.google.android.material.chip.ChipGroup>
+
+    <LinearLayout
+        android:id="@+id/quickActions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/filterChipGroup"
+        android:layout_marginTop="12dp"
+        android:weightSum="2">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/emergencyButton"
+            style="@style/Widget.Material3.Button.TonalButton"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="6dp"
+            android:text="EMERGENCY"
+            android:textColor="@color/error"
+            android:textStyle="bold"
+            app:icon="@android:drawable/ic_dialog_alert"
+            app:iconGravity="top"
+            app:iconTint="@color/error"
+            app:cornerRadius="16dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/loginButton"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:layout_marginStart="6dp"
+            android:text="PHARMACIST"
+            android:textColor="@color/primary"
+            android:textStyle="bold"
+            app:icon="@android:drawable/ic_lock_lock"
+            app:iconGravity="top"
+            app:iconTint="@color/primary"
+            app:cornerRadius="16dp" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/searchLoader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/quickActions"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/resultsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/quickActions"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="12dp"
+        tools:listitem="@layout/item_pharmacy_result" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

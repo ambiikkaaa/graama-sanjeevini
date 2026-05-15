@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Grama-Sanjeevini</string>
+    <string name="search_medicine">Search Medicine</string>
+    <string name="login">Login</string>
+    <string name="inventory">Inventory</string>
+    <string name="emergency">Emergency Stock</string>
+    <string name="in_stock">In Stock</string>
+    <string name="out_of_stock">Out of Stock</string>
+    <string name="life_saving">Life Saving</string>
+    <string name="expiring_soon">Expiring Soon</string>
+</resources>

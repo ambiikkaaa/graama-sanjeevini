@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Lively Medical Theme Palette (Teal & Cyan) -->
+    <color name="primary">#00796B</color> <!-- Deep Teal -->
+    <color name="primary_light">#E0F2F1</color> <!-- Very Light Teal -->
+    <color name="primary_variant">#004D40</color> <!-- Dark Teal -->
+    <color name="primary_dark">#004D40</color> <!-- Alias for Dark Teal -->
+    <color name="on_primary">#FFFFFF</color>
+
+    <color name="secondary">#00BFA5</color> <!-- Bright Cyan -->
+    <color name="secondary_variant">#009688</color>
+    <color name="on_secondary">#000000</color>
+
+    <!-- Background and Surface -->
+    <color name="background">#F5F7F8</color> <!-- Clean Off-White -->
+    <color name="surface">#FFFFFF</color>
+    <color name="on_surface">#212121</color>
+
+    <!-- Status Colors (High Contrast) -->
+    <color name="success">#2E7D32</color> <!-- Forest Green for In Stock -->
+    <color name="error">#D32F2F</color> <!-- High-visibility Red -->
+    <color name="warning">#E65100</color> <!-- High-visibility Orange -->
+
+    <!-- Text Colors (Ensuring maximum visibility) -->
+    <color name="text_primary">#1A1C1E</color> <!-- Near Black -->
+    <color name="text_secondary">#424242</color> <!-- Dark Grey -->
+    <color name="text_hint">#757575</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="grey">#757575</color>
+</resources>

@@ -9,7 +9,51 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="837c5808-a13c-4955-8c45-1820e504c48c" name="Changes" comment="Initial project upload" />
+    <list default="true" id="837c5808-a13c-4955-8c45-1820e504c48c" name="Changes" comment="Initial project upload">
+      <change beforePath="$PROJECT_DIR$/.gradle/8.5/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.5/checksums/md5-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.5/checksums/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.5/dependencies-accessors/gc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.5/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.5/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.5/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/9.0.0/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/9.0.0/checksums/md5-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/9.0.0/checksums/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/9.0.0/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/9.0.0/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/9.0.0/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/9.0.0/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/AndroidProjectSystem.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deviceManager.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/migrations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hs_err_pid11900.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hs_err_pid16840.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hs_err_pid5840.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hs_err_pid8216.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/replay_pid8216.log" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,12 +102,12 @@
     &quot;assignee&quot;: &quot;ambiikkaaa&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/ambiikkaaa/grama-sanjeevini&quot;,
-    &quot;accountId&quot;: &quot;803edfdf-9a90-45c8-8a82-2458f563bff3&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/ambiikkaaa/graama-sanjeevini.git",
+    "accountId": "803edfdf-9a90-45c8-8a82-2458f563bff3"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -79,6 +123,7 @@
     "ExportApk.ApkPathForGrama-Sanjeevini.app": "C:\\Users\\hp\\OneDrive\\Desktop\\Graama sanjeevini\\app",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
@@ -216,7 +261,15 @@
       <option name="project" value="LOCAL" />
       <updated>1778775087276</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Initial project upload">
+      <option name="closed" value="true" />
+      <created>1778848870412</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1778848870416</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
