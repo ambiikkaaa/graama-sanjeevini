@@ -71,24 +71,24 @@ The application uses:
 
 ## Results
 
-## User Medicine Search Interface
-<img src="images/Medicine search.jpg" width="800"/>
-
-This screen allows users to search medicines, apply distance filters, view nearby pharmacies, and navigate directly using Google Maps.
-
----
-
-## Authentication Screens
-<img src="images/authentication.jpg" width="800"/>
+### Authentication Screens
+<img src="images/Home page and Authentication.jpg" width="800"/>
 
 The application provides secure pharmacist registration and login using Firebase Authentication with map-based pharmacy location pinning.
 
 ---
 
-## Pharmacist Inventory Dashboard
-<img src="images/inventory_dashboard.jpg" width="800"/>
+### Pharmacist Inventory Dashboard
+<img src="images/Stock update.jpg" width="800"/>
 
 Pharmacists can manage medicine stock, track near-expiry medicines, add discounts, and highlight life-saving medicines.
+
+---
+
+### User Medicine Search Interface
+<img src="images/Medicine search.jpg" width="800"/>
+
+This screen allows users to search medicines, apply distance filters, view nearby pharmacies, and navigate directly using Google Maps.
 
 ---
 
