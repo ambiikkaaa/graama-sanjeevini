@@ -1,41 +1,96 @@
-# Grama-Sanjeevini
+# Grama-Sanjeevini – Rural Pharmacy Network
 
-A rural healthcare pharmacy network app for Android.
+## Overview
+Grama-Sanjeevini is an Android-based rural healthcare application that helps users locate nearby pharmacies with available medicines in real time. The application uses GPS location services, Firebase backend integration, and Google Maps navigation to improve medicine accessibility in rural areas.
+
+---
 
 ## Features
 
-- Medicine search for villagers
-- Location-based filtering (within 10-20 km)
-- Pharmacist login and inventory management
-- Shared inventory using Firebase Firestore
-- Expiry alerts
-- Emergency stock view for life-saving drugs
+- Real-time medicine availability tracking
+- GPS-based nearby pharmacy search
+- Distance calculation in kilometers
+- Google Maps route navigation
+- Radius filtering (10KM / 20KM)
+- Emergency/Life-saving medicine highlighting
+- Pharmacist inventory management
+- Expiry alert and discount system
+- Firebase real-time database synchronization
 
-## Setup Instructions
+---
 
-1. **Firebase Setup:**
-   - Create a Firebase project at https://console.firebase.google.com/
-   - Enable Firestore and Authentication
-   - Download `google-services.json` and place it in `app/` directory
-   - Update the API key in `AndroidManifest.xml`
-
-2. **Google Maps API:**
-   - Enable Google Maps API in Google Cloud Console
-   - Get API key and replace `YOUR_API_KEY_HERE` in `AndroidManifest.xml`
-
-3. **Build the App:**
-   - Open the project in Android Studio
-   - Sync Gradle files
-   - Build and run on device/emulator
-
-## Usage
-
-- **Villagers:** Search for medicines, view nearby availability
-- **Pharmacists:** Login to manage inventory, add medicines, update stock
-
-## Tech Stack
+## Technologies Used
 
 - Kotlin
-- Firebase Firestore
-- Firebase Auth
-- Google Maps/Location API
+- XML
+- Material Design 3
+- Firebase Authentication
+- Cloud Firestore
+- Google Maps SDK
+- Fused Location Provider API
+- Android Studio
+
+---
+
+## System Modules
+
+### User Module
+Users can search medicines, view nearby pharmacies, filter results by distance, and navigate to pharmacies using Google Maps.
+
+### Pharmacist Module
+Pharmacists can register stores, pin pharmacy locations, add medicine stock, update inventory, and manage expiry information.
+
+---
+
+## Workflow
+
+### Pharmacist Workflow
+Register → Pin Store Location → Login → Add Medicine Stock → Update Inventory
+
+### User Workflow
+Open App → Grant Location Permission → Search Medicine → View Nearby Pharmacies → Navigate Using Google Maps
+
+---
+
+## Firebase Integration
+
+- Firebase Authentication for secure login/signup
+- Cloud Firestore for real-time medicine and pharmacy data storage
+- Firebase BOM for dependency management
+
+---
+
+## Location & Navigation
+
+The application uses:
+- Fused Location Provider API for accurate GPS coordinates
+- Google Maps SDK for map display
+- Google Navigation Intent for route guidance
+
+---
+
+## Results
+
+## User Medicine Search Interface
+<img src="C:/Users/hp/OneDrive/Desktop/Graama sanjeevini/images/Medicine search.jpg" width="800"/>
+
+This screen allows users to search medicines, apply distance filters, view nearby pharmacies, and navigate directly using Google Maps.
+
+---
+
+## Authentication Screens
+<img src="images/authentication.jpg" width="800"/>
+
+The application provides secure pharmacist registration and login using Firebase Authentication with map-based pharmacy location pinning.
+
+---
+
+## Pharmacist Inventory Dashboard
+<img src="images/inventory_dashboard.jpg" width="800"/>
+
+Pharmacists can manage medicine stock, track near-expiry medicines, add discounts, and highlight life-saving medicines.
+
+---
+
+## Conclusion
+Grama-Sanjeevini successfully digitizes the rural pharmacy experience. By combining real-time inventory management with precise GPS-based navigation, it creates a reliable healthcare safety net for village communities.
