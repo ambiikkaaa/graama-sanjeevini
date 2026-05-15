@@ -72,7 +72,7 @@ The application uses:
 ## Results
 
 ## User Medicine Search Interface
-<img src="C:/Users/hp/OneDrive/Desktop/Graama sanjeevini/images/Medicine search.jpg" width="800"/>
+<img src="images/Medicine search.jpg" width="800"/>
 
 This screen allows users to search medicines, apply distance filters, view nearby pharmacies, and navigate directly using Google Maps.
 
